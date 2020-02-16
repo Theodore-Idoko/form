@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="title">
+    <h2>Survey Form</h2>
+</div>
+
+<div class="container">
+    <div class="top">
+        <p>Let us know how we can improve freeCodeCamp</p>
+
+        <form>
+            <div class="form-group">
+                <label class="isRequired" for="name">Name:</label>
+                <input type="text" name="Name" placeholder="Enter Your Name" />
+            </div>
+            <div class="form-group">
+                <label class="isRequired" for="email">Email:</label>
+                <input type="email" name="email" placeholder="Enter Your Email" />
+            </div>
+            <div class="form-group">
+                <label class="isRequired" for="Age">Age:</label>
+                <input type="number" name="Age" placeholder="Age" />
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="mid">
+        <div class="mid-group">
+            <form>
+                <div class="select">
+                    <label>Which options best describes your current position ?</label>
+                    <select name="option">
+                        <option value="student">Student</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+                <div class="radio">
+                    <label>How likely is that you would recommend freeCodeCamp to a friend ?</label>
+                    <div class="radios">
+                        <div>
+                            <input type="radio" name="recommend">
+                            <label for="#">Definitely</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="recommend">
+                            <label for="#">Maybe</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="recommend">
+                            <label for="#">Not Sure</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-2">
+                    <div class="select">
+                        <label>What do you like most in FCC ?</label>
+                        <select name="option">
+                            <option value="student">Select an option</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="check">
+                    <label>Things that should be improved in the future</label>
+                    <div class="check-boxes">
+                        <div>
+                            <input type="checkbox">
+                            <label for="#">Front-end Project</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" >
+                            <label for="#">Back-end Project</label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <label for="#">Data Visualization</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
